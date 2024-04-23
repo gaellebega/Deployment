@@ -9,7 +9,7 @@ function About() {
         <Link to='/projects'> About </Link>
         <Link to='/contacts'> Contact</Link>
     </div>
-    <div>about</div>
+    <div className="text-red-800">About me</div>
     </>
   )
 }

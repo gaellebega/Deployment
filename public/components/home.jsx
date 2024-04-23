@@ -2,7 +2,9 @@
 
 function home() {
   return (
-    <div>home</div>
+    <div>
+    <div className="text-green-300">home</div>
+    </div>
   )
 }
 

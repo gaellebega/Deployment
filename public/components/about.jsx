@@ -2,7 +2,7 @@
 
 function about() {
   return (
-    <div>about</div>
+    <div className="text-red-700">about</div>
   )
 }
 
