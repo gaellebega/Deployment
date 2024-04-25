@@ -2,7 +2,7 @@
 
 function Contacts() {
   return (
-    <div className="text-blue-800 ">Contact Me</div>
+    <div className="text-red-500 font-serif italic" >Contact Me</div>
   )
 }
 

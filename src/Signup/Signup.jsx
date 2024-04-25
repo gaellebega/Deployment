@@ -1,109 +1,90 @@
-import {Link} from 'react-router-dom'
+import { Link } from 'react-router-dom';
 
 const Signup = () => {
   return (
-<div>
- 
+    <div className="flex items-center justify-center min-h-screen bg-green-300">
+      <section className="max-w-md w-full px-6 py-8 bg-orange-300 rounded-lg shadow-lg">
+        <h1 className="text-2xl font-bold text-gray-900 mb-4 text-center">SIGNUP</h1>
 
-<section className="bg-green-300">
-  <div className="lg:grid lg:min-h-screen lg:grid-cols-12">
-    
-    <main
-      className="flex items-center justify-center  sm:px-12 lg:col-span-7 lg:px-16 lg:py-12 xl:col-span-6 bg-orange-00 px-10 py-20 "
-    >
-      <div className="max-w-xl lg:max-w-3xl ">
-        <h1 className="mt-6 text-2xl font-bold text-gray-900 sm:text-3xl md:text-4xl">
-          SIGNUP 
-        </h1>
-
-
-        <form action="#" className="mt-8 grid grid-cols-6 gap-6">
-          <div className="col-span-6 sm:col-span-3">
+        <form className="grid grid-cols-1 gap-4">
+          <div>
             <label htmlFor="FirstName" className="block text-sm font-medium text-gray-700">
               First Name
             </label>
-
             <input
               type="text"
               id="FirstName"
               name="first_name"
-              className="mt-1 w-full rounded-md border-gray-200 bg-white text-sm text-gray-700 shadow-sm"
+              className="mt-1 w-full rounded-md border-gray-200 bg-white text-sm text-gray-700 px-3 py-2 shadow-sm"
             />
           </div>
 
-          <div className="col-span-6 sm:col-span-3">
+          <div>
             <label htmlFor="LastName" className="block text-sm font-medium text-gray-700">
               Last Name
             </label>
-
             <input
               type="text"
               id="LastName"
               name="last_name"
-              className="mt-1 w-full rounded-md border-gray-200 bg-white text-sm text-gray-700 shadow-sm"
+              className="mt-1 w-full rounded-md border-gray-200 bg-white text-sm text-gray-700 px-3 py-2 shadow-sm"
             />
           </div>
 
-          <div className="col-span-6">
-            <label htmlFor="Email" className="block text-sm font-medium text-gray-700"> Email </label>
-
+          <div>
+            <label htmlFor="Email" className="block text-sm font-medium text-gray-700">
+              Email
+            </label>
             <input
               type="email"
               id="Email"
               name="email"
-              className="mt-1 w-full rounded-md border-gray-200 bg-white text-sm text-gray-700 shadow-sm"
+              className="mt-1 w-full rounded-md border-gray-200 bg-white text-sm text-gray-700 px-3 py-2 shadow-sm"
             />
           </div>
 
-          <div className="col-span-6 sm:col-span-3">
-            <label htmlFor="Password" className="block text-sm font-medium text-gray-700"> Password </label>
-
+          <div>
+            <label htmlFor="Password" className="block text-sm font-medium text-gray-700">
+              Password
+            </label>
             <input
               type="password"
               id="Password"
               name="password"
-              className="mt-1 w-full rounded-md border-gray-200 bg-white text-sm text-gray-700 shadow-sm"
+              className="mt-1 w-full rounded-md border-gray-200 bg-white text-sm text-gray-700 px-3 py-2 shadow-sm"
             />
           </div>
 
-          <div className="col-span-6 sm:col-span-3">
+          <div>
             <label htmlFor="PasswordConfirmation" className="block text-sm font-medium text-gray-700">
               Password Confirmation
             </label>
-
             <input
               type="password"
               id="PasswordConfirmation"
               name="password_confirmation"
-              className="mt-1 w-full rounded-md border-gray-200 bg-white text-sm text-gray-700 shadow-sm"
+              className="mt-1 w-full rounded-md border-gray-200 bg-white text-sm text-gray-700 px-3 py-2 shadow-sm"
             />
           </div>
 
-          
-          
-
-          <div className="col-span-6 sm:flex sm:items-center sm:gap-4">
+          <div className="flex items-center justify-between">
             <button
-              className="inline-block shrink-0 rounded-md border border-blue-600 bg-blue-600 px-12 py-3 text-sm font-medium text-white transition hover:bg-transparent hover:text-blue-600 focus:outline-none focus:ring active:text-blue-500"
+              type="submit"
+              className="px-4 py-2 bg-blue-600 text-white rounded-md text-sm font-medium hover:bg-blue-500 focus:outline-none focus:ring"
             >
-              Create an account
+              Create Account
             </button>
-
-            <p className="mt-4 text-sm text-gray-500 sm:mt-0">
-              Already have an account?
-             <Link to="/" className=" text-gray-700 underline" >
-              Log in
-            </Link> 
+            <p className="text-sm text-gray-500">
+              Already have an account?{' '}
+              <Link to="/" className="text-blue-600 underline">
+                Log in
+              </Link>
             </p>
           </div>
         </form>
-      </div>
-    </main>
-  </div>
-</section>
-  
-  </div>
-  )
-}
+      </section>
+    </div>
+  );
+};
 
-export default Signup
+export default Signup;

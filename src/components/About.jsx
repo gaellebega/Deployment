@@ -2,7 +2,7 @@
 
 function About() {
   return (
-    <div className="text-red-700">About</div>
+    <div className="text-red-500 font-serif italic">About</div>
   )
 }
 

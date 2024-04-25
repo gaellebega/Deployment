@@ -3,7 +3,7 @@
 function Home() {
   return (
     <div>
-    <div className="text-black-300">Home</div>
+    <div className="text-red-500 font-serif italic">Home</div>
     </div>
   )
 }
